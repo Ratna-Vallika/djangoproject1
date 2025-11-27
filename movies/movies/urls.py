@@ -16,10 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from allaboutmovies.views import basic,movie
+from allaboutmovies.views import basic,movies
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('basic/',basic),
-     path('movie/',movie)
+    path('movie/',movies),
+     
+    
 ]
+
